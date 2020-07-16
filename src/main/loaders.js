@@ -17,9 +17,4 @@ export default {
 	async lzstring() {
 		return await import(/* webpackChunkName: "lzstring" */ 'lz-string');
 	},
-	async lzw() {
-		const module = await import(/* webpackChunkName: "lzw" */ 'node-lzw');
-		const lzw = module.default || module;
-		return lzw;
-	}
 };
